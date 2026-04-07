@@ -1,0 +1,1 @@
+// TODO: Hotkey Implementation: Left Arrow = Left, Right Arrow = Right, Space = Open/Close (depend. on state)
