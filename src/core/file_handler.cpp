@@ -2,6 +2,8 @@
 #include <string>
 #include <unordered_set>
 #include <filesystem>
+#define UNSUPPORTED_FILE_ERROR = "[ERROR]: INVALID FILE TYPE"
+#define INVALID_COMMAND = "[ERROR]: INVALID COMMAND"
 
 namespace ft = std::filesystem;
 
@@ -15,7 +17,7 @@ bool is_supported(const std::string& filename) {
         std::cout << "[VALID FILE TYPE]" << std::endl;
         return true;
     } else {
-        std::cout << "[ERROR]: INVALID FILE TYPE" << std::endl;
+        std::cout << UNSUPPORTED_FILE_ERROR << std::endl;
         return false;
     }
 }
@@ -25,7 +27,7 @@ bool is_valid_input(const int &argc, char** const &argv) {
         std::cout << "[VALID INPUT] \n[EXECUTING PROGRAM]" << std::endl;    
         return true;
     } else {
-        std::cout << "Silent Fail" << std::endl;
+        std::cout << INVALID_COMMAND << std::endl;
         return false;
     }
 }
