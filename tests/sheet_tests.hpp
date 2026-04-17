@@ -2,7 +2,7 @@
 
 class SheetTests : public QObject {
     Q_OBJECT
-
+    
     private:
         bool myCondition() {
             return true;
