@@ -1,4 +1,9 @@
-#include "file_type_input_test.hpp"
+#include "AudioTests.hpp"
+#include "VideoTests.hpp"
+#include "ImageTests.hpp"
+#include "DocumentTests.hpp"
+#include "TextTests.hpp"
+#include "SheetTests.hpp"
 #include <cstdlib>
 // Use automation tests for various different file types:
 // Audio: .mp3
@@ -7,6 +12,8 @@
 // Documents: .pdf
 // Text-Based Files: .txt, .py, .cpp, etc.
 // Sheets: .xslx, etc.
+
+
 
 int main () {
 
